@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 20fr;
+    grid-template-areas: 
+    "sidebar nav "
+    "sidebar container";
+    grid-template-rows: 1fr 20fr;
+    
+}
+aside {
+    background: #f09328;
+    grid-area: sidebar;
+}
+.header-title {
+    background: #bb782b;
+    padding: 16px;
+    color: #fff;
+}
+.header-title h3 {
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+nav {
+    background: #d58224;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+li {
+    padding: 12px;
+}
+section {
+    background: #b8701e;
+    grid-area: container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    width:30%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-group {
+    margin-top: 10px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    border:none;
+    cursor: pointer;
+    background: orange;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.form-title {
+    padding: 10px;
+    color: orange;
+}
+.profile {
+    padding: 10px;
+}
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
